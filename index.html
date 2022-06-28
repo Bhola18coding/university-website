@@ -7,8 +7,122 @@
     <title>University Website Design</title>
 
     <link rel="stylesheet" href="style.css  ">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <h1>hello</h1>
+   
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+
+            <div class="nav-links" id="nav_links">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a> </li>
+                    <li><a href="">ABOUT</a> </li>
+                    <li><a href="">COURSE</a> </li>
+                    <li><a href="">BLOG</a> </li>
+                    <li><a href="">CONTACT</a> </li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
+        </nav>
+
+<div class="text-box">
+    
+    <h1>World's Biggest University</h1>
+    <p>Making Website is now easier by the help of Html & Css</p>
+
+    <a href="" class="hero-btn">View us to know more</a>
+</div>
+
+    </section>
+
+    <!-- Course  -->
+    <section class="course">
+      <h1>Courses we offer</h1>
+      <p>Complete WebDevelopment - HTML , CSS, JAVASCRIPT, REACT JS, NODE JS etc</p>
+
+      <div class="row">
+        <div class="course-col">
+            <h3>HTML</h3>
+            <p>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+        </div>
+        <div class="course-col">
+            <h3>CSS</h3>
+            <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. .</p>
+        </div>
+        <div class="course-col">
+            <h3>JAVASCRIPT</h3>
+            <p>JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard. </p>
+        </div>
+      </div>
+        
+    </section>
+
+   
+    <!-- campus   -->
+   <section class="campus">
+    <h1>Our Global Campus</h1>
+    <p>Web Development and resources was established many years ago with an objective to impart higher and quality education in the field.</p>
+    
+    <div class="row">
+      <div class="campus-col">
+        <img src="images/london.png">
+        <div class="layer">
+            <h3>LONDON</h3>
+        </div>
+     </div>
+
+        <div class="campus-col">
+            <img src="images/newyork.png">
+            <div class="layer">
+                <h3>NEWYORK</h3>
+            </div>
+            </div>
+
+            <div class="campus-col">
+                <img src="images/washington.png">
+                <div class="layer">
+                    <h3>WASHINGTON</h3>
+                </div>
+                </div>
+      </div>
+
+    </div>
+
+</section>
+
+         <!-- Facilities   -->
+
+
+
+
+
+    <!-- Javascript for toggle menu  -->
+
+<script>
+
+   
+    var nav_links = document.getElementById("nav_links");
+
+    function showMenu()
+    {
+        nav_links.style.right = "0";
+    }
+
+    function hideMenu()
+    {
+        nav_links.style.right="-200px";
+    }
+</script>
+
+
 </body>
 </html>
